@@ -1,5 +1,3 @@
-# AWS-Security-Terraform
-
 # AWS Secure Networking with Terraform 🛡️🕸️
 
 ## 📋 Scenario
