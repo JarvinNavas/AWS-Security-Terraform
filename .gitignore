@@ -1,0 +1,9 @@
+# Ignorar la carpeta de binarios de Terraform
+.terraform/
+
+# Ignorar los archivos de estado (ESTO ES CRÍTICO PARA LA SEGURIDAD)
+*.tfstate
+*.tfstate.*
+
+# Ignorar archivos temporales
+crash.log
