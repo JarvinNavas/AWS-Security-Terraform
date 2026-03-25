@@ -20,5 +20,9 @@ This repository automates the deployment of the following resources:
 * **IaC Tool:** HashiCorp Terraform
 * **Language:** HCL (HashiCorp Configuration Language)
 
+## 🚀 Day 2 Updates: Compute & Dynamic Provisioning
+* **Dynamic AMI Fetching:** Implemented Terraform `data` sources to automatically query AWS for the latest Ubuntu 22.04 LTS Machine Image, avoiding hardcoded, deprecated AMIs.
+* **Variable Management:** Abstracted sensitive network inputs (like administrator IP addresses for SSH access) into `variables.tf` to maintain clean, reusable, and secure code.
+* **Bastion Host Deployment:** Successfully deployed an EC2 instance (`t3.micro`) acting as a secure jump box into the public subnet, firmly bound by the strict Security Group rules.
 ---
 *Built as part of an intensive 30-Day DevSecOps Engineering sprint.*

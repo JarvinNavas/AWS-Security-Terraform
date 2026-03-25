@@ -66,7 +66,7 @@ resource "aws_security_group" "sg_bastion" {
     # REGLA DE ORO DE SEGURIDAD: Nunca uses 0.0.0.0/0 para SSH.
     # Por ahora, simularemos que tu IP es 203.0.113.50. 
     # (En la vida real, pondrías tu IP pública real aquí).
-    cidr_blocks = ["203.0.113.50/32"] 
+    cidr_blocks = [var.mi_ip_publica] # ATENCIÓN: Cambiaremos esto en un segundo.
   }
 
   # Regla de Salida (Egress): Permitir todo el trafico hacia afuera
